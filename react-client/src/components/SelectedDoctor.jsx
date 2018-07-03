@@ -3,7 +3,7 @@ import DoctorListItem from './DoctorListItem.jsx';
 
 const SelectedDoctor = ({doctor, relatedDoctors, handleSelect}) => {
   return ( 
-  <div>
+  <div className='container'>
     <div onClick={() => {handleSelect(null)}}> X </div>
     <div>
      <DoctorListItem doctor={doctor}/>

@@ -12,7 +12,7 @@ const DoctorListItem = ({doctor}) => {
       Specialty: {doctor.specialty}
     </div>
     <div>
-      Practice Area: {doctor.area}
+      Location: {doctor.area}
     </div>
   </div>
 

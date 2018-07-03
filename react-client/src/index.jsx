@@ -24,7 +24,7 @@ class App extends React.Component {
     this.state = { 
       allDoctors: doctors,
       selected: null,
-      relatedDoctors: [],
+      relatedDoctors: [], // Related doctors are doctors with the same specialty, these are then sorted by rating from hightest to lowest
     }
     this.handleChange = this.handleChange.bind(this);
     this.handleSelect = this.handleSelect.bind(this);

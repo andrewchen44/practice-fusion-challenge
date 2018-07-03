@@ -2,7 +2,7 @@ import React from 'react';
 import DoctorListItem from './DoctorListItem.jsx';
 
 const DoctorList = ({ doctors, handleChange, handleSelect }) => (
-  <div className='container doctor_list_container'> Browse By 
+  <div className='container doctor_list_container'> Browse By: 
     <select name="filters" onChange={handleChange}>
       <option value="rating">Rating</option>
       <option value="specialty">Specialty</option>

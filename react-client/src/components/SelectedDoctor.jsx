@@ -6,6 +6,7 @@ const SelectedDoctor = ({doctor, relatedDoctors, handleSelect}) => {
   <div className='container'>
     <div onClick={() => {handleSelect(null)}}> X </div>
     <div>
+      <h4>Selected Doctor</h4>
      <DoctorListItem doctor={doctor}/>
     </div>
     <div>

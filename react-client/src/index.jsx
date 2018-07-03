@@ -50,7 +50,7 @@ class App extends React.Component {
       })
     } else {
       const selected = this.state.allDoctors[index];
-      const relatedDoctors = this.state.allDoctors.filter((doctor) => doctor.specialty === selected.specialty).sort((a, b) => {
+      const relatedDoctors = this.state.allDoctors.filter((doctor) => doctor.specialty === selected.specialty && doctor.name !== selected.name).sort((a, b) => {
         return b.rating - a.rating;
       });
 
@@ -64,7 +64,7 @@ class App extends React.Component {
 
   render () {
     const content = this.state.selected === null ? <DoctorList handleSelect={this.handleSelect} handleChange={this.handleChange} doctors={this.state.allDoctors}/> : <SelectedDoctor doctor={this.state.selected} relatedDoctors={this.state.relatedDoctors} handleSelect={this.handleSelect}/>
-    return (<div>
+    return (<div className='app'>
         {content}
       </div>)
   }

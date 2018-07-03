@@ -1,0 +1,29 @@
+.app {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 500px;
+  border: 1px solid black;
+  border-radius: 5px;
+  height: 85vh;
+
+}
+
+.doctor_list_container{
+  max-height: 95%;
+  overflow-y: scroll;
+}
+
+.doctor_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.doctor_list_item{
+  border: 1px solid black;
+}
+
+.container{
+  padding: 1%;
+  margin: 1%;
+}

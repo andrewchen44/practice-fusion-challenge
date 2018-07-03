@@ -1,8 +1,7 @@
 import React from 'react';
 
 const DoctorListItem = ({doctor}) => {
-  console.log(doctor)
-  return <div>
+  return <div className='doctor_list_item container'>
     <div>
       {doctor.name}
     </div>
